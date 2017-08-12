@@ -11,6 +11,23 @@ public class ChangeGear : MonoBehaviour
         //EquipItem("Legs", "pants"); 
     }
 
+    public void EquipWinter()
+    {
+        EquipItem("Legs", "pants");
+        EquipItem("Chest", "shirt");
+        //EquipItem("Feet", "boots");
+    }
+
+    public void EquipSummer()
+    {
+
+    }
+
+    public void EquipMarriage()
+    {
+
+    }
+
     public void EquipItem(string itemType, string itemSlug)
     {
         for (int i = 0; i < equipmentScript.equippedItems.Count; i++)
