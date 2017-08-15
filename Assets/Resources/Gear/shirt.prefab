@@ -1197,7 +1197,7 @@ GameObject:
   - 4: {fileID: 418224}
   - 95: {fileID: 9518066}
   m_Layer: 0
-  m_Name: shirt-proper
+  m_Name: shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
