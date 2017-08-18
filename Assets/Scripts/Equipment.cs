@@ -25,6 +25,15 @@ public class Equipment : MonoBehaviour
     {
         stitcher = new Stitcher();
     }
+
+    public void UnequipAll()
+    {
+        foreach(Item i in equippedItems)
+        {
+            if(i.ItemPrefab != null)
+                RemoveEquipment(i);
+        }
+    }
     
     public void InitializeEquipptedItemsList()
     {
