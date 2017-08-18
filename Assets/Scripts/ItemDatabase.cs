@@ -16,15 +16,15 @@ public class ItemDatabase : MonoBehaviour
         itemList.Add(new Item(2, "", "", "bald_head", "Hair"));
         itemList.Add(new Item(3, "", "", "naked_feet", "Feet"));
         //clothing
-        itemList.Add(new Item(50, "", "", "pants", "Legs", (GameObject)Resources.Load("Gear/pants")));
-        itemList.Add(new Item(55, "", "", "trousers", "Legs", (GameObject)Resources.Load("Gear/pants")));
-        itemList.Add(new Item(56, "", "", "pajama", "Legs", (GameObject)Resources.Load("Gear/pants")));
-        itemList.Add(new Item(51, "", "", "boots", "Feet", (GameObject)Resources.Load("Gear/boots")));
-        itemList.Add(new Item(52, "", "", "shirt", "Chest", (GameObject)Resources.Load("Gear/shirt")));
-        itemList.Add(new Item(52, "", "", "kurta", "Chest", (GameObject)Resources.Load("Gear/kurta")));
-        itemList.Add(new Item(54, "", "", "sweater", "Chest", (GameObject)Resources.Load("Gear/sweater")));
+        itemList.Add(new Item(50, "", "", "pants", "Legs", (GameObject)Resources.Load("pants")));
+        itemList.Add(new Item(55, "", "", "trousers", "Legs", (GameObject)Resources.Load("trousers")));
+        itemList.Add(new Item(56, "", "", "pajama", "Legs", (GameObject)Resources.Load("pajama")));
+        itemList.Add(new Item(51, "", "", "boots", "Feet", (GameObject)Resources.Load("boots")));
+        itemList.Add(new Item(52, "", "", "shirt", "Chest", (GameObject)Resources.Load("shirt")));
+        itemList.Add(new Item(52, "", "", "kurta", "Chest", (GameObject)Resources.Load("kurta")));
+        itemList.Add(new Item(54, "", "", "sweater", "Chest", (GameObject)Resources.Load("sweater")));
         //hair and beard
-        itemList.Add(new Item(200, "", "", "long_hair", "Hair", (GameObject)Resources.Load("Gear/long_hair")));
+        itemList.Add(new Item(200, "", "", "long_hair", "Hair", (GameObject)Resources.Load("long_hair")));
         //itemList.Add(new Item(201, "", "", "beard", "Beard", (GameObject)Resources.Load("Gear/beard")));
         //itemList.Add(new Item(201, "", "", "mustache", "Mustache", (GameObject)Resources.Load("Gear/mustache")));
     }

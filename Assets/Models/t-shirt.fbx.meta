@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b96c4f4f17bbf31459da77db7081991b
+guid: 0e607173250751a4c8523922a4a48b2e
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -64,9 +64,9 @@ ModelImporter:
     100116: Ring_3.R
     100118: Ring_3.R_end
     100120: Root
-    100122: //RootNode
-    100124: Spine_1
-    100126: Spine_2
+    100122: Spine_1
+    100124: Spine_2
+    100126: //RootNode
     100128: Thumb_1.L
     100130: Thumb_1.R
     100132: Thumb_2.L
@@ -144,9 +144,9 @@ ModelImporter:
     400116: Ring_3.R
     400118: Ring_3.R_end
     400120: Root
-    400122: //RootNode
-    400124: Spine_1
-    400126: Spine_2
+    400122: Spine_1
+    400124: Spine_2
+    400126: //RootNode
     400128: Thumb_1.L
     400130: Thumb_1.R
     400132: Thumb_2.L
@@ -619,7 +619,7 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: shirt(Clone)
+    - name: t-shirt(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}

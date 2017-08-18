@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b96c4f4f17bbf31459da77db7081991b
+guid: 278e0c2d669fa944da7c53fa63b614b9
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -11,60 +11,60 @@ ModelImporter:
     100010: FootIK.L_end
     100012: FootIK.R
     100014: FootIK.R_end
-    100016: Gambeson
-    100018: Hand.L
-    100020: Hand.R
-    100022: HandItem.L
-    100024: HandItem.L_end
-    100026: HandItem.R
-    100028: HandItem.R_end
-    100030: Head
-    100032: Head_end
-    100034: Hips
-    100036: Index_1.L
-    100038: Index_1.R
-    100040: Index_2.L
-    100042: Index_2.R
-    100044: Index_3.L
-    100046: Index_3.L_end
-    100048: Index_3.R
-    100050: Index_3.R_end
-    100052: KneeControl.L
-    100054: KneeControl.L_end
-    100056: KneeControl.R
-    100058: KneeControl.R_end
-    100060: Little_1.L
-    100062: Little_1.R
-    100064: Little_2.L
-    100066: Little_2.R
-    100068: Little_3.L
-    100070: Little_3.L_end
-    100072: Little_3.R
-    100074: Little_3.R_end
-    100076: LowerArm.L
-    100078: LowerArm.R
-    100080: LowerLeg.L
-    100082: LowerLeg.R
-    100084: Middle_1.L
-    100086: Middle_1.R
-    100088: Middle_2.L
-    100090: Middle_2.R
-    100092: Middle_3.L
-    100094: Middle_3.L_end
-    100096: Middle_3.R
-    100098: Middle_3.R_end
-    100100: Neck
-    100102: Rig
-    100104: Ring_1.L
-    100106: Ring_1.R
-    100108: Ring_2.L
-    100110: Ring_2.R
-    100112: Ring_3.L
-    100114: Ring_3.L_end
-    100116: Ring_3.R
-    100118: Ring_3.R_end
-    100120: Root
-    100122: //RootNode
+    100016: Hand.L
+    100018: Hand.R
+    100020: HandItem.L
+    100022: HandItem.L_end
+    100024: HandItem.R
+    100026: HandItem.R_end
+    100028: Head
+    100030: Head_end
+    100032: Hips
+    100034: Human
+    100036: //RootNode
+    100038: Index_1.L
+    100040: Index_1.R
+    100042: Index_2.L
+    100044: Index_2.R
+    100046: Index_3.L
+    100048: Index_3.L_end
+    100050: Index_3.R
+    100052: Index_3.R_end
+    100054: KneeControl.L
+    100056: KneeControl.L_end
+    100058: KneeControl.R
+    100060: KneeControl.R_end
+    100062: Little_1.L
+    100064: Little_1.R
+    100066: Little_2.L
+    100068: Little_2.R
+    100070: Little_3.L
+    100072: Little_3.L_end
+    100074: Little_3.R
+    100076: Little_3.R_end
+    100078: LowerArm.L
+    100080: LowerArm.R
+    100082: LowerLeg.L
+    100084: LowerLeg.R
+    100086: Middle_1.L
+    100088: Middle_1.R
+    100090: Middle_2.L
+    100092: Middle_2.R
+    100094: Middle_3.L
+    100096: Middle_3.L_end
+    100098: Middle_3.R
+    100100: Middle_3.R_end
+    100102: Neck
+    100104: Rig
+    100106: Ring_1.L
+    100108: Ring_1.R
+    100110: Ring_2.L
+    100112: Ring_2.R
+    100114: Ring_3.L
+    100116: Ring_3.L_end
+    100118: Ring_3.R
+    100120: Ring_3.R_end
+    100122: Root
     100124: Spine_1
     100126: Spine_2
     100128: Thumb_1.L
@@ -91,60 +91,60 @@ ModelImporter:
     400010: FootIK.L_end
     400012: FootIK.R
     400014: FootIK.R_end
-    400016: Gambeson
-    400018: Hand.L
-    400020: Hand.R
-    400022: HandItem.L
-    400024: HandItem.L_end
-    400026: HandItem.R
-    400028: HandItem.R_end
-    400030: Head
-    400032: Head_end
-    400034: Hips
-    400036: Index_1.L
-    400038: Index_1.R
-    400040: Index_2.L
-    400042: Index_2.R
-    400044: Index_3.L
-    400046: Index_3.L_end
-    400048: Index_3.R
-    400050: Index_3.R_end
-    400052: KneeControl.L
-    400054: KneeControl.L_end
-    400056: KneeControl.R
-    400058: KneeControl.R_end
-    400060: Little_1.L
-    400062: Little_1.R
-    400064: Little_2.L
-    400066: Little_2.R
-    400068: Little_3.L
-    400070: Little_3.L_end
-    400072: Little_3.R
-    400074: Little_3.R_end
-    400076: LowerArm.L
-    400078: LowerArm.R
-    400080: LowerLeg.L
-    400082: LowerLeg.R
-    400084: Middle_1.L
-    400086: Middle_1.R
-    400088: Middle_2.L
-    400090: Middle_2.R
-    400092: Middle_3.L
-    400094: Middle_3.L_end
-    400096: Middle_3.R
-    400098: Middle_3.R_end
-    400100: Neck
-    400102: Rig
-    400104: Ring_1.L
-    400106: Ring_1.R
-    400108: Ring_2.L
-    400110: Ring_2.R
-    400112: Ring_3.L
-    400114: Ring_3.L_end
-    400116: Ring_3.R
-    400118: Ring_3.R_end
-    400120: Root
-    400122: //RootNode
+    400016: Hand.L
+    400018: Hand.R
+    400020: HandItem.L
+    400022: HandItem.L_end
+    400024: HandItem.R
+    400026: HandItem.R_end
+    400028: Head
+    400030: Head_end
+    400032: Hips
+    400034: Human
+    400036: //RootNode
+    400038: Index_1.L
+    400040: Index_1.R
+    400042: Index_2.L
+    400044: Index_2.R
+    400046: Index_3.L
+    400048: Index_3.L_end
+    400050: Index_3.R
+    400052: Index_3.R_end
+    400054: KneeControl.L
+    400056: KneeControl.L_end
+    400058: KneeControl.R
+    400060: KneeControl.R_end
+    400062: Little_1.L
+    400064: Little_1.R
+    400066: Little_2.L
+    400068: Little_2.R
+    400070: Little_3.L
+    400072: Little_3.L_end
+    400074: Little_3.R
+    400076: Little_3.R_end
+    400078: LowerArm.L
+    400080: LowerArm.R
+    400082: LowerLeg.L
+    400084: LowerLeg.R
+    400086: Middle_1.L
+    400088: Middle_1.R
+    400090: Middle_2.L
+    400092: Middle_2.R
+    400094: Middle_3.L
+    400096: Middle_3.L_end
+    400098: Middle_3.R
+    400100: Middle_3.R_end
+    400102: Neck
+    400104: Rig
+    400106: Ring_1.L
+    400108: Ring_1.R
+    400110: Ring_2.L
+    400112: Ring_2.R
+    400114: Ring_3.L
+    400116: Ring_3.L_end
+    400118: Ring_3.R
+    400120: Ring_3.R_end
+    400122: Root
     400124: Spine_1
     400126: Spine_2
     400128: Thumb_1.L
@@ -163,12 +163,11 @@ ModelImporter:
     400154: UpperArm.R
     400156: UpperLeg.L
     400158: UpperLeg.R
-    2300000: Gambeson
-    3300000: Gambeson
-    4300000: Gambeson
+    4300000: Human
     7400000: Rig|Idle
     7400002: Rig|T_Pose
     9500000: //RootNode
+    13700000: Human
   materials:
     importMaterials: 1
     materialName: 0
@@ -619,14 +618,14 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: shirt(Clone)
+    - name: human(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: Gambeson
+    - name: Human
       position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
+      rotation: {x: -8.14603354e-08, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Rig
@@ -638,26 +637,6 @@ ModelImporter:
       position: {x: -0, y: .000859511201, z: 0}
       rotation: {x: .999999583, y: -1.10043308e-10, z: -1.19209489e-07, w: .000922993699}
       scale: {x: 1, y: 1, z: 1.00000167}
-      transformModified: 1
-    - name: FootIK.L
-      position: {x: -.00199526595, y: .000448519946, z: -.00111749547}
-      rotation: {x: -.116496362, y: .912155867, z: .389772058, w: .0497795418}
-      scale: {x: 1, y: .999999702, z: .99999994}
-      transformModified: 1
-    - name: FootIK.L_end
-      position: {x: -0, y: .00118008524, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FootIK.R
-      position: {x: .00199526548, y: .000448519946, z: -.0011174964}
-      rotation: {x: .116497092, y: .912155807, z: .389772058, w: -.0497798882}
-      scale: {x: .99999994, y: 1, z: .99999994}
-      transformModified: 1
-    - name: FootIK.R_end
-      position: {x: -0, y: .00118008524, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Hips
       position: {x: -2.34568476e-09, y: .000877675484, z: -.00983847864}
@@ -672,6 +651,21 @@ ModelImporter:
     - name: Spine_2
       position: {x: -1.16573414e-17, y: .00231476082, z: 1.86264504e-10}
       rotation: {x: -.235502139, y: 3.7403507e-09, z: 5.14732683e-08, w: .97187382}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Neck
+      position: {x: -3.5527136e-17, y: .00382262189, z: -1.49011609e-10}
+      rotation: {x: .248697549, y: 7.38340611e-10, z: -5.31592583e-08, w: .9685812}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Head
+      position: {x: 1.55431224e-17, y: .000825133873, z: 2.98023217e-10}
+      rotation: {x: -.0668439791, y: 1.04128484e-08, z: 1.46516834e-08, w: .997763455}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Head_end
+      position: {x: -0, y: .00225308281, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Clavicle.L
@@ -693,56 +687,6 @@ ModelImporter:
       position: {x: -1.86264511e-11, y: .00386370323, z: 1.08033416e-09}
       rotation: {x: .120242052, y: -.0735360458, z: -.0479291081, w: .988856435}
       scale: {x: .99999994, y: .99999994, z: 1}
-      transformModified: 1
-    - name: HandItem.L
-      position: {x: 1.40906677e-05, y: .000560954446, z: .000248848199}
-      rotation: {x: -.138228625, y: -.058794748, z: -.712630093, w: .685269594}
-      scale: {x: .999999881, y: .999999881, z: .99999994}
-      transformModified: 1
-    - name: HandItem.L_end
-      position: {x: -0, y: .00270729, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Index_1.L
-      position: {x: .000178817121, y: .00110663101, z: -5.72587924e-05}
-      rotation: {x: -.115740433, y: .0461498462, z: .0334080048, w: .991644263}
-      scale: {x: .999999762, y: .99999994, z: .999999881}
-      transformModified: 1
-    - name: Index_2.L
-      position: {x: 3.72529022e-11, y: .000466979429, z: -1.20839105e-09}
-      rotation: {x: .0214534178, y: -.00152272393, z: -.00485161319, w: .999756932}
-      scale: {x: 1, y: .999999821, z: 1}
-      transformModified: 1
-    - name: Index_3.L
-      position: {x: -7.45058043e-11, y: .00046588431, z: -7.7765433e-10}
-      rotation: {x: .0404768474, y: -.00444045477, z: -.00182133331, w: .999168992}
-      scale: {x: 1.00000012, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: Index_3.L_end
-      position: {x: -0, y: .000295103906, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Little_1.L
-      position: {x: -.000547599804, y: .00109158282, z: 7.0455294e-06}
-      rotation: {x: -.100209013, y: .0454870425, z: .0538105965, w: .992468357}
-      scale: {x: .999999821, y: .999999881, z: 1}
-      transformModified: 1
-    - name: Little_2.L
-      position: {x: -2.60770322e-10, y: .000407735206, z: 5.58793511e-10}
-      rotation: {x: .0411704369, y: -.00455348194, z: .00484255375, w: .99913007}
-      scale: {x: 1, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: Little_3.L
-      position: {x: -3.72529008e-10, y: .000319640734, z: 7.40401407e-10}
-      rotation: {x: .0231250376, y: -.00945554022, z: .00222925213, w: .999685407}
-      scale: {x: 1, y: 1, z: .999999881}
-      transformModified: 1
-    - name: Little_3.L_end
-      position: {x: -0, y: .000244452647, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Middle_1.L
       position: {x: 4.09390765e-07, y: .00114171871, z: -9.64044957e-05}
@@ -784,6 +728,46 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
+    - name: Little_1.L
+      position: {x: -.000547599804, y: .00109158282, z: 7.0455294e-06}
+      rotation: {x: -.100209013, y: .0454870425, z: .0538105965, w: .992468357}
+      scale: {x: .999999821, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Little_2.L
+      position: {x: -2.60770322e-10, y: .000407735206, z: 5.58793511e-10}
+      rotation: {x: .0411704369, y: -.00455348194, z: .00484255375, w: .99913007}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Little_3.L
+      position: {x: -3.72529008e-10, y: .000319640734, z: 7.40401407e-10}
+      rotation: {x: .0231250376, y: -.00945554022, z: .00222925213, w: .999685407}
+      scale: {x: 1, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Little_3.L_end
+      position: {x: -0, y: .000244452647, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_1.L
+      position: {x: .000178817121, y: .00110663101, z: -5.72587924e-05}
+      rotation: {x: -.115740433, y: .0461498462, z: .0334080048, w: .991644263}
+      scale: {x: .999999762, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Index_2.L
+      position: {x: 3.72529022e-11, y: .000466979429, z: -1.20839105e-09}
+      rotation: {x: .0214534178, y: -.00152272393, z: -.00485161319, w: .999756932}
+      scale: {x: 1, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Index_3.L
+      position: {x: -7.45058043e-11, y: .00046588431, z: -7.7765433e-10}
+      rotation: {x: .0404768474, y: -.00444045477, z: -.00182133331, w: .999168992}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Index_3.L_end
+      position: {x: -0, y: .000295103906, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     - name: Thumb_1.L
       position: {x: .000243351751, y: .000240511363, z: .000248717522}
       rotation: {x: -.243216023, y: -.498285592, z: -.335034609, w: .761780262}
@@ -801,6 +785,16 @@ ModelImporter:
       transformModified: 1
     - name: Thumb_3.L_end
       position: {x: -0, y: .000357778394, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HandItem.L
+      position: {x: 1.40906677e-05, y: .000560954446, z: .000248848199}
+      rotation: {x: -.138228625, y: -.058794748, z: -.712630093, w: .685269594}
+      scale: {x: .999999881, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: HandItem.L_end
+      position: {x: -0, y: .00270729, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -823,56 +817,6 @@ ModelImporter:
       position: {x: -1.30385161e-10, y: .00386370346, z: 8.28877078e-10}
       rotation: {x: .120243423, y: .0735358968, z: .0479293801, w: .988856316}
       scale: {x: 1.00000012, y: 1, z: 1.00000012}
-      transformModified: 1
-    - name: HandItem.R
-      position: {x: -2.2428203e-05, y: .000914621109, z: .000146785096}
-      rotation: {x: -.138196409, y: .0587637834, z: .712636411, w: .685272157}
-      scale: {x: 1, y: .999999881, z: 1}
-      transformModified: 1
-    - name: HandItem.R_end
-      position: {x: -0, y: .00270729, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Index_1.R
-      position: {x: -.000178816801, y: .00110663113, z: -5.72602803e-05}
-      rotation: {x: -.115735807, y: -.0461497307, z: -.0334060974, w: .991644859}
-      scale: {x: .999999762, y: 1, z: 1}
-      transformModified: 1
-    - name: Index_2.R
-      position: {x: -1.49011609e-10, y: .000466978701, z: -8.84756435e-10}
-      rotation: {x: .021453429, y: .00152272719, z: .00485161459, w: .999756932}
-      scale: {x: 1, y: .99999994, z: .99999994}
-      transformModified: 1
-    - name: Index_3.R
-      position: {x: 1.86264504e-10, y: .000465883873, z: 5.12227427e-10}
-      rotation: {x: .0404766984, y: .00444045709, z: .00182132062, w: .999168992}
-      scale: {x: 1, y: 1.00000012, z: .99999994}
-      transformModified: 1
-    - name: Index_3.R_end
-      position: {x: -0, y: .000295103906, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Little_1.R
-      position: {x: .000547600212, y: .0010915827, z: 7.04407694e-06}
-      rotation: {x: -.10021165, y: -.0454871878, z: -.0538119599, w: .992468119}
-      scale: {x: .999999821, y: .999999881, z: 1}
-      transformModified: 1
-    - name: Little_2.R
-      position: {x: 2.98023217e-10, y: .000407735235, z: 1.45286316e-09}
-      rotation: {x: .0411762372, y: .00455345726, z: -.00484307902, w: .999129772}
-      scale: {x: 1, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: Little_3.R
-      position: {x: 3.72529008e-10, y: .00031964088, z: 1.72294679e-10}
-      rotation: {x: .0231252108, y: .00945554115, z: -.00222925143, w: .999685407}
-      scale: {x: 1, y: 1, z: .999999881}
-      transformModified: 1
-    - name: Little_3.R_end
-      position: {x: -0, y: .000244452647, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Middle_1.R
       position: {x: -4.09074119e-07, y: .00114171894, z: -9.64059873e-05}
@@ -914,6 +858,46 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
+    - name: Little_1.R
+      position: {x: .000547600212, y: .0010915827, z: 7.04407694e-06}
+      rotation: {x: -.10021165, y: -.0454871878, z: -.0538119599, w: .992468119}
+      scale: {x: .999999821, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Little_2.R
+      position: {x: 2.98023217e-10, y: .000407735235, z: 1.45286316e-09}
+      rotation: {x: .0411762372, y: .00455345726, z: -.00484307902, w: .999129772}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Little_3.R
+      position: {x: 3.72529008e-10, y: .00031964088, z: 1.72294679e-10}
+      rotation: {x: .0231252108, y: .00945554115, z: -.00222925143, w: .999685407}
+      scale: {x: 1, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Little_3.R_end
+      position: {x: -0, y: .000244452647, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_1.R
+      position: {x: -.000178816801, y: .00110663113, z: -5.72602803e-05}
+      rotation: {x: -.115735807, y: -.0461497307, z: -.0334060974, w: .991644859}
+      scale: {x: .999999762, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_2.R
+      position: {x: -1.49011609e-10, y: .000466978701, z: -8.84756435e-10}
+      rotation: {x: .021453429, y: .00152272719, z: .00485161459, w: .999756932}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Index_3.R
+      position: {x: 1.86264504e-10, y: .000465883873, z: 5.12227427e-10}
+      rotation: {x: .0404766984, y: .00444045709, z: .00182132062, w: .999168992}
+      scale: {x: 1, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: Index_3.R_end
+      position: {x: -0, y: .000295103906, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     - name: Thumb_1.R
       position: {x: -.000243351431, y: .000240511479, z: .000248717202}
       rotation: {x: -.243216187, y: .498285234, z: .335033387, w: .761781037}
@@ -934,18 +918,13 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: Neck
-      position: {x: -3.5527136e-17, y: .00382262189, z: -1.49011609e-10}
-      rotation: {x: .248697549, y: 7.38340611e-10, z: -5.31592583e-08, w: .9685812}
-      scale: {x: 1, y: 1, z: .99999994}
+    - name: HandItem.R
+      position: {x: -2.2428203e-05, y: .000914621109, z: .000146785096}
+      rotation: {x: -.138196409, y: .0587637834, z: .712636411, w: .685272157}
+      scale: {x: 1, y: .999999881, z: 1}
       transformModified: 1
-    - name: Head
-      position: {x: 1.55431224e-17, y: .000825133873, z: 2.98023217e-10}
-      rotation: {x: -.0668439791, y: 1.04128484e-08, z: 1.46516834e-08, w: .997763455}
-      scale: {x: 1, y: 1, z: .99999994}
-      transformModified: 1
-    - name: Head_end
-      position: {x: -0, y: .00225308281, z: 0}
+    - name: HandItem.R_end
+      position: {x: -0, y: .00270729, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -999,6 +978,16 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
+    - name: FootIK.L
+      position: {x: -.00199526595, y: .000448519946, z: -.00111749547}
+      rotation: {x: -.116496362, y: .912155867, z: .389772058, w: .0497795418}
+      scale: {x: 1, y: .999999702, z: .99999994}
+      transformModified: 1
+    - name: FootIK.L_end
+      position: {x: -0, y: .00118008524, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     - name: KneeControl.L
       position: {x: -.00140200672, y: .00477579329, z: -.00527155166}
       rotation: {x: -8.43767367e-08, y: .999462306, z: .0327887088, w: -2.5830484e-06}
@@ -1006,6 +995,16 @@ ModelImporter:
       transformModified: 1
     - name: KneeControl.L_end
       position: {x: -0, y: .00270711118, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: FootIK.R
+      position: {x: .00199526548, y: .000448519946, z: -.0011174964}
+      rotation: {x: .116497092, y: .912155807, z: .389772058, w: -.0497798882}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: FootIK.R_end
+      position: {x: -0, y: .00118008524, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
