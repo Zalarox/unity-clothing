@@ -17,8 +17,8 @@ public class ItemDatabase : MonoBehaviour
         itemList.Add(new Item(3, "", "", "naked_feet", "Feet"));
         //clothing
         itemList.Add(new Item(50, "", "", "pants", "Legs", (GameObject)Resources.Load("Gear/pants")));
-        itemList.Add(new Item(55, "", "", "trousers", "Legs", (GameObject)Resources.Load("Gear/pants")));
-        itemList.Add(new Item(56, "", "", "pajama", "Legs", (GameObject)Resources.Load("Gear/pants")));
+        itemList.Add(new Item(55, "", "", "trousers", "Legs", (GameObject)Resources.Load("Gear/trousers")));
+        itemList.Add(new Item(56, "", "", "pajama", "Legs", (GameObject)Resources.Load("Gear/pajama")));
         itemList.Add(new Item(51, "", "", "boots", "Feet", (GameObject)Resources.Load("Gear/boots")));
         itemList.Add(new Item(52, "", "", "shirt", "Chest", (GameObject)Resources.Load("Gear/shirt")));
         itemList.Add(new Item(52, "", "", "kurta", "Chest", (GameObject)Resources.Load("Gear/kurta")));
