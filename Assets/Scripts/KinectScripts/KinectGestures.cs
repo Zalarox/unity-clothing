@@ -179,8 +179,8 @@ public class KinectGestures
 				{
 					gestureData.tagVector.x = jointsPos[rightShoulderIndex].x - gestureData.tagVector2.x / 2;
 					gestureData.tagVector.y = jointsPos[hipCenterIndex].y;
-                }
-                else
+				}
+				else
 				{
 					gestureData.tagVector.x = jointsPos[leftShoulderIndex].x - gestureData.tagVector2.x / 2;
 					gestureData.tagVector.y = jointsPos[hipCenterIndex].y;

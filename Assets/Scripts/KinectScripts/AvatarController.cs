@@ -66,8 +66,7 @@ public class AvatarController : MonoBehaviour
 	}
 	
 	public void Awake()
-    {
-        
+    {	
 		// check for double start
 		if(bones != null)
 			return;
