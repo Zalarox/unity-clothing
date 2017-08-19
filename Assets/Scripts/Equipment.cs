@@ -30,7 +30,7 @@ public class Equipment : MonoBehaviour
     {
         foreach(Item i in equippedItems)
         {
-            if(i.ItemPrefab != null)
+            if(i.ItemPrefab != null && i != null)
                 RemoveEquipment(i);
         }
     }

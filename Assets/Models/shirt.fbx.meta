@@ -163,12 +163,11 @@ ModelImporter:
     400154: UpperArm.R
     400156: UpperLeg.L
     400158: UpperLeg.R
-    2300000: Gambeson
-    3300000: Gambeson
     4300000: Gambeson
     7400000: Rig|Idle
     7400002: Rig|T_Pose
     9500000: //RootNode
+    13700000: Gambeson
   materials:
     importMaterials: 1
     materialName: 0
