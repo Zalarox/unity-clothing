@@ -10,6 +10,10 @@ public class GameController : MonoBehaviour
     private int currentIndex;
     public Text question;
 
+    public AudioClip win;
+    public AudioClip lose;
+    public AudioSource audioSource;
+
     private void chooseRandom()
     {
         if (questions.Count > 0)
@@ -36,11 +40,13 @@ public class GameController : MonoBehaviour
             equipmentScript.UnequipAll();
             EquipItem("Legs", "trousers");
             EquipItem("Chest", "sweater");
+            audioSource.PlayOneShot(win, 0.7F);
             scoreManager.IncreaseScore();
             chooseRandom();
         }
         else
         {
+            audioSource.PlayOneShot(lose, 0.7F);
             scoreManager.DecreaseScore();
         }
     }
@@ -52,11 +58,13 @@ public class GameController : MonoBehaviour
             equipmentScript.UnequipAll();
             EquipItem("Legs", "pants");
             EquipItem("Chest", "shirt");
+            audioSource.PlayOneShot(win, 0.7F);
             scoreManager.IncreaseScore();
             chooseRandom();
         }
         else
         {
+            audioSource.PlayOneShot(lose, 0.7F);
             scoreManager.DecreaseScore();
         }
     }
@@ -68,11 +76,13 @@ public class GameController : MonoBehaviour
             equipmentScript.UnequipAll();
             EquipItem("Legs", "pajama");
             EquipItem("Chest", "kurta");
+            audioSource.PlayOneShot(win, 0.7F);
             scoreManager.IncreaseScore();
             chooseRandom();
         }
         else
-        { 
+        {
+            audioSource.PlayOneShot(lose, 0.7F);
             scoreManager.DecreaseScore();
         }
     }
