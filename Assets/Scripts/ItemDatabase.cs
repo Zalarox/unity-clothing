@@ -23,6 +23,8 @@ public class ItemDatabase : MonoBehaviour
         itemList.Add(new Item(52, "", "", "shirt", "Chest", (GameObject)Resources.Load("shirt")));
         itemList.Add(new Item(53, "", "", "kurta", "Chest", (GameObject)Resources.Load("kurta")));
         itemList.Add(new Item(54, "", "", "sweater", "Chest", (GameObject)Resources.Load("sweater")));
+        itemList.Add(new Item(57, "", "", "shirt2", "Legs", (GameObject)Resources.Load("shirt2")));
+        itemList.Add(new Item(58, "", "", "pants2", "Legs", (GameObject)Resources.Load("pants2")));
         //hair and beard
         itemList.Add(new Item(200, "", "", "long_hair", "Hair", (GameObject)Resources.Load("long_hair")));
         //itemList.Add(new Item(201, "", "", "beard", "Beard", (GameObject)Resources.Load("Gear/beard")));
