@@ -11,12 +11,14 @@ public class GameController : MonoBehaviour
     private List<string> questions = new List<string>(new string[] { "What would you wear in the Summers?", "What would you wear in the Winters?", "What would you wear at a marriage?" });
     private int currentIndex;
     public Text question;
+    public GameObject snowObj;
 
     public AudioClip win;
     public AudioClip lose;
     public AudioSource audioSource;
 
     Image summer, winter, marriage;
+    ParticleSystem snow;
 
     IEnumerator UploadAndExit()
     {
@@ -63,6 +65,7 @@ public class GameController : MonoBehaviour
         equipmentScript = GetComponent<Equipment>();
         equipmentScript.InitializeEquipptedItemsList();
         scoreManager = GetComponent<ScoreManager>();
+        snow = snowObj.GetComponent<ParticleSystem>();
         summer = GameObject.Find("Summer").GetComponent<Image>();
         winter = GameObject.Find("Winter").GetComponent<Image>();
         marriage = GameObject.Find("Marriage").GetComponent<Image>();
@@ -79,6 +82,7 @@ public class GameController : MonoBehaviour
             audioSource.PlayOneShot(win, 0.7F);
             StartCoroutine(changeColour(winter, Color.green));
             scoreManager.IncreaseScore();
+            snow.Play();
             chooseRandom();
         }
         else
@@ -103,6 +107,7 @@ public class GameController : MonoBehaviour
             audioSource.PlayOneShot(win, 0.7F);
             StartCoroutine(changeColour(summer, Color.green));
             scoreManager.IncreaseScore();
+            snow.Stop();
             chooseRandom();
         }
         else
@@ -127,6 +132,7 @@ public class GameController : MonoBehaviour
             audioSource.PlayOneShot(win, 0.7F);
             StartCoroutine(changeColour(marriage, Color.green));
             scoreManager.IncreaseScore();
+            snow.Stop();
             chooseRandom();
         }
         else

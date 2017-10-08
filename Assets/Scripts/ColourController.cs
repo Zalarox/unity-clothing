@@ -2,10 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using SimpleJSON;
 
 public class ColourController : MonoBehaviour {
 
     public Text questionText;
+    public GameObject fireworks;
+    ParticleEmitter fireworkEmit;
+
     GameObject shirt, pants;
     Renderer shirtR, pantsR;
     Equipment equipment;
@@ -28,8 +32,10 @@ public class ColourController : MonoBehaviour {
 
     void Start()
     {
+        StartCoroutine(FetchDetails("Siddhant"));
         questionText.text = "What should be the colour of the shirt?";
         equipment = GetComponent<Equipment>();
+        fireworkEmit = fireworks.GetComponent<ParticleEmitter>();
         equipment.InitializeEquipptedItemsList();
         EquipItem("Legs", "pants2");
         EquipItem("Chest", "shirt2");
@@ -42,6 +48,7 @@ public class ColourController : MonoBehaviour {
     {
         if(pant == "blue" || pant == "orange")
         {
+            StartCoroutine(Upload(shirt, pant));
             return Combination.Good;
         }
         else
@@ -55,6 +62,7 @@ public class ColourController : MonoBehaviour {
         if (choosePants == false)
         {
             questionText.text = "What should be the colour of the shirt?";
+            StopCoroutine(Wait3());
         }
         else if (choosePants == true && currentCombination == Combination.None)
         {
@@ -62,20 +70,34 @@ public class ColourController : MonoBehaviour {
         }
         else if (choosePants == true && currentCombination == Combination.Good)
         {
-            questionText.text = "That is a good combination! Well done.";
+            questionText.text = "That is a good combination! Well done. Try another...";
+            choosePants = false;
+            currentCombination = Combination.None;
+            fireworkEmit.Emit();
+            //StartCoroutine(Upload());
+            StartCoroutine(Wait3());
         }
         else
         {
             questionText.text = "That is not a good combination, try again!";
+            choosePants = false;
+            currentCombination = Combination.None;
+            StartCoroutine(Wait3());
         }
     }
 
-    IEnumerator Upload()
+    IEnumerator Wait3()
+    {
+        yield return new WaitForSeconds(3f);
+        ChangeQuestion();
+    }
+
+    IEnumerator Upload(string shirt, string pant)
     {
         WWWForm form = new WWWForm();
         form.AddField("name", "Siddhant");
-        form.AddField("colorcombination", "");
-
+        form.AddField("shirtcolour", shirt);
+        form.AddField("pantcolour", pant);
         WWW req = new WWW("localhost:3000/api/colourcombination", form);
         yield return req;
 
@@ -88,7 +110,28 @@ public class ColourController : MonoBehaviour {
             Debug.Log("Successfully posted! " + req.text);
         }
 
-        Application.Quit();
+    }
+
+    IEnumerator FetchDetails(string name)
+    {
+        WWW res = new WWW("localhost:3000/api/colourcombination/" + name);
+        yield return res;
+
+        if (!string.IsNullOrEmpty(res.error))
+        {
+            Debug.Log(res.error);
+        }
+        else
+        {
+            Debug.Log("Successfully Got " + res.text);
+            JSONNode parsed = JSON.Parse(res.text);
+            for(int i=0; i<parsed.Count; i++)
+            {
+                Debug.Log(parsed[i]["shirtcolour"].Value);
+                Debug.Log(parsed[i]["pantcolour"].Value);
+            }
+        }
+
     }
 
     public void ChangeColour(string newColor)
@@ -115,60 +158,7 @@ public class ColourController : MonoBehaviour {
                 ChangeQuestion();
             }
         }
-        //if(newColor.ToLower().Equals("blue"))
-        //{
-        //    if(choosePants == false)
-        //    {              
-        //        shirt.renderer.material.SetColor("_Color", new Color32(150, 208, 255, 255));
-        //        choosePants = true;
-        //        ChangeQuestion();
-        //    }
-        //    else
-        //    {
-        //        pants.renderer.material.SetColor("_Color", new Color32(150, 208, 255, 255));
-        //    }
-        //}
-        //else if (newColor.ToLower().Equals("orange"))
-        //{
-        //    if (choosePants == false)
-        //    {
-        //        shirt.renderer.material.SetColor("_Color", new Color32(255, 218, 61, 255));
-        //        choosePants = true;
-        //        ChangeQuestion();
-        //    }
-        //    else
-        //    {
-        //        pants.renderer.material.SetColor("_Color", new Color32(255, 218, 61, 255));
-        //    }
-        //}
-        //else if (newColor.ToLower().Equals("pink"))
-        //{
-        //    if (choosePants == false)
-        //    {
-        //        shirt.renderer.material.SetColor("_Color", new Color32(255, 175, 255, 255));
-        //        choosePants = true;
-        //        ChangeQuestion();
-        //    }
-        //    else
-        //    {
-        //        pants.renderer.material.SetColor("_Color", new Color32(255, 175, 255, 255));
-        //    }
-        //}
-        //else if (newColor.ToLower().Equals("green"))
-        //{
-        //    if (choosePants == false)
-        //    {
-        //        shirt.renderer.material.SetColor("_Color", new Color32(204, 255, 150, 255));
-        //        choosePants = true;
-        //        ChangeQuestion();
-        //    }
-        //    else
-        //    {
-        //        pants.renderer.material.SetColor("_Color", new Color32(204, 255, 150, 255));
-        //    }
-        //}
     }
-
 
     public void EquipItem(string itemType, string itemSlug)
     {
