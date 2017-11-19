@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using SimpleJSON;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -60,8 +61,88 @@ public class GameController : MonoBehaviour
         img.color = Color.white;
     }
 
+    private void saveToPrefs(string data)
+    {
+        PlayerPrefs.SetString("weather-data", data);
+    }
+
+    private string GetFromPrefs()
+    {
+        if(PlayerPrefs.HasKey("weather-data"))
+        {
+            return PlayerPrefs.GetString("weather-data");
+        }
+
+        return null;
+    }
+
+    private void GetWeather()
+    {
+        string existingData = GetFromPrefs();
+        bool found = false;
+
+        if (existingData != null)
+        {
+            try
+            {
+                JSONNode data = JSON.Parse(existingData);
+                System.Int32 now = (System.Int32)(System.DateTime.Now.Subtract(new System.DateTime(1970, 1, 1))).TotalSeconds;
+
+                for (int i = 0; i < 8; i++)
+                {
+                    if (System.Convert.ToInt32(data["list"][i]["dt"].Value) > now)
+                    {
+                        Debug.Log("Found valid data:" + data["list"][i]["weather"][0]["id"]);
+                        found = true;
+                        break;
+                    }
+                }
+
+                if(!found)
+                {
+                    PlayerPrefs.DeleteAll();
+                    FetchWeather();
+                }
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("Error parsing existing JSON... Corrupt or Invalid data!");
+                Debug.LogError(e.StackTrace);
+            }
+        }
+        else
+        {
+            StartCoroutine(FetchWeather());
+        }
+    }
+
+    IEnumerator FetchWeather()
+    {
+        const string API_KEY = "4a96164437361001cc4d88263ad386a4";
+        const string ENDPOINT = "api.openweathermap.org/data/2.5/forecast";
+        const string CITY = "1261481"; // NEW DELHI, IN
+        const string CNT = "8"; // COUNT, for 3 hour - each day has 8 segments
+        const string UNITS = "metric"; // Unit format to be used
+
+        WWW res = new WWW(ENDPOINT + "?id=" + CITY + "&cnt=" + CNT + "&units=" + UNITS + "&APPID=" + API_KEY);
+        yield return res;
+
+        if (!string.IsNullOrEmpty(res.error))
+        {
+            Debug.Log(res.error);
+        }
+        else
+        {
+            Debug.Log("Got data."  + res.text);
+            saveToPrefs(res.text);
+            //GetWeather();
+        }
+    }
+
     private void Start()
     {
+        GetWeather();
+
         equipmentScript = GetComponent<Equipment>();
         equipmentScript.InitializeEquipptedItemsList();
         scoreManager = GetComponent<ScoreManager>();

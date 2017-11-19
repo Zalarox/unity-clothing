@@ -3,11 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using SimpleJSON;
+using System.Linq;
 
 public class ColourController : MonoBehaviour {
 
     public Text questionText;
     public GameObject fireworks;
+    public Sprite filledStar;
+    GameObject[] stars;
+    int starIndex = 0;
     ParticleEmitter fireworkEmit;
 
     GameObject shirt, pants;
@@ -36,6 +40,7 @@ public class ColourController : MonoBehaviour {
         questionText.text = "What should be the colour of the shirt?";
         equipment = GetComponent<Equipment>();
         fireworkEmit = fireworks.GetComponent<ParticleEmitter>();
+        stars = GameObject.FindGameObjectsWithTag("star").OrderBy(g=>g.transform.GetSiblingIndex()).ToArray();
         equipment.InitializeEquipptedItemsList();
         EquipItem("Legs", "pants2");
         EquipItem("Chest", "shirt2");
@@ -73,6 +78,14 @@ public class ColourController : MonoBehaviour {
             questionText.text = "That is a good combination! Well done. Try another...";
             choosePants = false;
             currentCombination = Combination.None;
+
+            //Vector3 pos = Camera.main.ScreenToWorldPoint(stars[starIndex].transform.position);
+            //fireworkEmit.transform.position = pos;
+            if (starIndex < 6)
+            {
+                stars[starIndex].GetComponent<Image>().sprite = filledStar;
+                starIndex++;
+            }
             fireworkEmit.Emit();
             //StartCoroutine(Upload());
             StartCoroutine(Wait3());
